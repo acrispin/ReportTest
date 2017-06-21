@@ -1,8 +1,26 @@
-nbproject/private/
+#ant specific
+dist/
 build/
 nbbuild/
-dist/
 nbdist/
+
+#netbeans specific
+nbproject/*
+!nbproject/project.properties
+!nbproject/project.xml
+
+#java specific
+*.class
+
+#general swap/backup files
+*.so
+*.log
+*.out
+*~
+*.swp
+*.DS_Store
+*.lock
+
 nbactions.xml
 nb-configuration.xml
 .nb-gradle/
