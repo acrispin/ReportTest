@@ -73,18 +73,18 @@ public class Reporte {
                 }
             }
             System.out.println("Report 01");
-            sendRequestPdf(bytes);
+            //sendRequestPdf(bytes);
             
             ////////////////////////////////////////////////// generacion reporte 02
-//            params = new HashMap<>();
-//            reportFile = new File("src/reports/report2.jasper");
-//            bytes = JasperRunManager.runReportToPdf(reportFile.getPath(), params, new JRBeanCollectionDataSource(listAsistente));
-//            if(bytes != null){
-//                try (OutputStream out = new FileOutputStream("src/reports/report2.pdf")) {
-//                    out.write(bytes);
-//                }
-//            }
-//            System.out.println("Report 02");
+            params = new HashMap<>();
+            reportFile = new File("src/reports/report2.jasper");
+            bytes = JasperRunManager.runReportToPdf(reportFile.getPath(), params, new JRBeanCollectionDataSource(listAsistente));
+            if(bytes != null){
+                try (OutputStream out = new FileOutputStream("src/reports/report2.pdf")) {
+                    out.write(bytes);
+                }
+            }
+            System.out.println("Report 02");
             
             ////////////////////////////////////////////////// generacion reporte 03
             params.put("nroCot", "A-1092387");
